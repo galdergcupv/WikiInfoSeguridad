@@ -14,7 +14,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="./" id="navbar__logo">WikiInfoSeguridad</a>
+            <a href="./index.html" id="navbar__logo">WikiInfoSeguridad</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -86,41 +86,41 @@
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
                     <h2>Sobre nosotros</h2>
-                    <a href="./">Cómo funciona</a>
-                    <a href="./">Testimonios</a>
-                    <a href="./">Carreras</a>
-                    <a href="./">Inversiones</a>
-                    <a href="./">Términos y condiciones</a>
+                    <a href="./index.html">Cómo funciona</a>
+                    <a href="./index.html">Testimonios</a>
+                    <a href="./index.html">Carreras</a>
+                    <a href="./index.html">Inversiones</a>
+                    <a href="./index.html">Términos y condiciones</a>
                 </div>
                 <div class="footer__link--items">
                     <h2>Contáctanos</h2>
-                    <a href="./">Contacto</a>
-                    <a href="./">Soporte</a>
-                    <a href="./">Destinos</a>
-                    <a href="./">Patrocinios</a>
+                    <a href="./index.html">Contacto</a>
+                    <a href="./index.html">Soporte</a>
+                    <a href="./index.html">Destinos</a>
+                    <a href="./index.html">Patrocinios</a>
                 </div>
             </div>
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
                     <h2>Vídeos</h2>
-                    <a href="./">Enviar vídeo</a>
-                    <a href="./">Embajadores</a>
-                    <a href="./">Agencia</a>
-                    <a href="./">Influencer</a>
+                    <a href="./index.html">Enviar vídeo</a>
+                    <a href="./index.html">Embajadores</a>
+                    <a href="./index.html">Agencia</a>
+                    <a href="./index.html">Influencer</a>
                 </div>
                 <div class="footer__link--items">
                     <h2>Redes sociales</h2>
-                    <a href="./">Instagram</a>
-                    <a href="./">Facebook</a>
-                    <a href="./">YouTube</a>
-                    <a href="./">Twitter</a>
+                    <a href="./index.html">Instagram</a>
+                    <a href="./index.html">Facebook</a>
+                    <a href="./index.html">YouTube</a>
+                    <a href="./index.html">Twitter</a>
                 </div>
             </div>
         </div>
         <div class="social__media">
             <div class="social__media--wrap">
                 <div class="footer__logo">
-                    <a href="./" id="footer__logo"><i class="fas faa-gem"></i>WikiInfoSeguridad</a>
+                    <a href="./index.html" id="footer__logo"><i class="fas faa-gem"></i>WikiInfoSeguridad</a>
                 </div>
                 <p class="website__rights">© WikiInfoSeguridad 2022. All rights reserved</p>
                 <!-- <div class="social__icons">
