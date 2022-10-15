@@ -20,7 +20,7 @@
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
             if($data['Password'] === $Password){
-                header('Location: ./cuenta.php ?Usuario='.$Usuario);
+                header('Location: ./cuenta.php?Usuario='.$Usuario);
             }
             else{
                 echo "<h2> Contraseña no válida </h2>";
