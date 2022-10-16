@@ -7,7 +7,7 @@
 
     //Database connection
 
-    $conn = new mysqli('localhost','root','','wikiseguridad_db');
+    $conn = new mysqli('db','admin','test','database');
     
     if (mysqli_connect_error()){
         die('Connection Falied :'.mysqli_connect_error());

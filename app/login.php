@@ -1,11 +1,10 @@
-
 <?php
     $Usuario = $_POST['Usuario'];
     $Password = $_POST['Password'];
 
     //Database connection
 
-    $conn = new mysqli('localhost','root','','wikiseguridad_db');
+    $conn = new mysqli('db','admin','test','database');
     
     if (mysqli_connect_error()){
         die('Connection Falied :'.mysqli_connect_error());
@@ -20,14 +19,20 @@
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
             if($data['Password'] === $Password){
-                header('Location: ./cuenta.php ?Usuario='.$Usuario);
+                header('Location: ./cuenta.php?Usuario='.$Usuario);
             }
             else{
-                echo "<h2> Contraseña no válida </h2>";
+                echo "<script>
+                alert('Contraseña no váilda');
+                window.location.href='./login.html';
+                </script>";
             }    
         }
         else{
-            echo "<h2> Usuario no válido </h2>";
+            echo "<script>
+                alert('Usuario no váildo');
+                window.location.href='./login.html';
+                </script>";
         }
 
 

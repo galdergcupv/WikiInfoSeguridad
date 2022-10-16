@@ -10,7 +10,7 @@
 
     //Database connection
 
-    $conn = new mysqli('localhost','root','','wikiseguridad_db');
+    $conn = new mysqli('db','admin','test','database');
     
     if (mysqli_connect_error()){
         die('Connection Falied :'.mysqli_connect_error());
@@ -19,7 +19,10 @@
         $stmt = $conn->prepare("insert into users(Nombre, Apellidos, DNI, Telefono, Fecha, Email, Usuario, Password) values(?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssissss", $Nombre, $Apellidos, $DNI, $Telefono, $Fecha, $Email, $Usuario, $Password);
         $stmt->execute();
-        echo "Registro completado...";
+        echo "<script>
+        alert('Registro completado...');
+        window.location.href='./index.html';
+        </script>";
         $stmt->close();
         $conn->close();
     }
