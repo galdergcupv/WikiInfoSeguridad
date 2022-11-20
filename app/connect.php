@@ -7,6 +7,7 @@
     $Email = $_POST['Email'];
     $Usuario = $_POST['Usuario'];
     $Password = $_POST['Password'];
+    $HashedPassword = password_hash($Password,PASSWORD_BCRYPT);
 
     //Database connection
 
@@ -17,7 +18,7 @@
     }
     else{
         $stmt = $conn->prepare("insert into users(Nombre, Apellidos, DNI, Telefono, Fecha, Email, Usuario, Password) values(?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssissss", $Nombre, $Apellidos, $DNI, $Telefono, $Fecha, $Email, $Usuario, $Password);
+        $stmt->bind_param("sssissss", $Nombre, $Apellidos, $DNI, $Telefono, $Fecha, $Email, $Usuario, $HashedPassword);
         $stmt->execute();
         echo "<script>
         alert('Registro completado...');

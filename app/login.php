@@ -18,7 +18,7 @@
 
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
-            if($data['Password'] === $Password){
+            if(password_verify($Password, $data['Password'])){
                 header('Location: ./cuenta.php?Usuario='.$Usuario);
             }
             else{

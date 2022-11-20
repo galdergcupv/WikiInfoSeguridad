@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: db
--- Generation Time: Nov 19, 2022 at 11:35 PM
--- Server version: 10.8.2-MariaDB-1:10.8.2+maria~focal
--- PHP Version: 8.0.19
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 15-10-2022 a las 20:23:02
+-- Versión del servidor: 10.4.25-MariaDB
+-- Versión de PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `database`
+-- Base de datos: `wikiseguridad_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `articulos`
+-- Estructura de tabla para la tabla `articulos`
 --
 
 CREATE TABLE `articulos` (
@@ -38,7 +38,7 @@ CREATE TABLE `articulos` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Estructura de tabla para la tabla `users`
 --
 
 CREATE TABLE `users` (
@@ -49,22 +49,21 @@ CREATE TABLE `users` (
   `Fecha` varchar(20) NOT NULL,
   `Email` varchar(100) NOT NULL,
   `Usuario` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL,
-  `Sal` varchar(5) NOT NULL
+  `Password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `articulos`
+-- Indices de la tabla `articulos`
 --
 ALTER TABLE `articulos`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `users`
+-- Indices de la tabla `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`DNI`),
