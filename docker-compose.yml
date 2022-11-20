@@ -17,7 +17,7 @@ db:
   environment:
     MYSQL_ROOT_PASSWORD: root
     MYSQL_USER: admin
-    MYSQL_PASSWORD: test
+    MYSQL_PASSWORD: 7iXXAwY2RgIaS!2C
     MYSQL_DATABASE: database
   ports:
     - "8889:3306"
@@ -30,5 +30,5 @@ phpmyadmin:
     - 8890:80
   environment:
     MYSQL_USER: admin
-    MYSQL_PASSWORD: test
+    MYSQL_PASSWORD: 7iXXAwY2RgIaS!2C
     MYSQL_DATABASE: database

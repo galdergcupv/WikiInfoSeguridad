@@ -4,7 +4,7 @@
 
     //Database connection
 
-    $conn = new mysqli('db','admin','test','database');
+    $conn = new mysqli('db','admin','7iXXAwY2RgIaS!2C','database');
     
     if (mysqli_connect_error()){
         die('Connection Falied :'.mysqli_connect_error());

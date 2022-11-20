@@ -49,7 +49,7 @@
         <tbody>
             <?php
             // Create connection
-            $connection = new mysqli('db','admin','test','database');
+            $connection = new mysqli('db','admin','7iXXAwY2RgIaS!2C','database');
 
             // Check connection
             if ($connection->connect_error){
